@@ -1,0 +1,43 @@
+<ion-view view-title="Novo Chamado">
+  <ion-nav-bar class="bar-jesuita"></ion-nav-bar>
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Assunto</span>
+        <input id="tb_assunto" type="text">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Descrição</span>
+        <textarea id="ta_descricao" rows="5"></textarea>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Observação</span>
+        <textarea id="ta_observacao" rows="5"></textarea>
+      </label>
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="text" readonly="true" placeholder="Arquivo">
+        </label>
+        <button class="button button-small">
+          Incluir
+        </button>
+      </div>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Setor
+        </div>
+        <select>
+          <option>Financeiro</option>
+          <option selected>Controladoria</option>
+          <option>Administração</option>
+        </select>
+      </label>
+      <button class="button button-block button-jesuita">
+        Salvar Chamado
+      </button>
+      <button ng-click="tb_assunto = ''; ta_descricao = ''; ta_observacao = '';" class="button button-block button-stable">
+        Limpar Dados
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view view-title="Acompanhamento de Chamados">
+<ion-nav-bar class="bar-jesuita"></ion-nav-bar>
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Buscar Chamado" ng-model="pesquisa">
+      </label>
+    </div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chamado in chamados | filter:pesquisa" type="item-text-wrap" href="#/tab/chamadodetalhes/{{detalhe.id}}">
+        <p>Chamado: <b>{{chamado.id}}</b><p>
+        <p>{{chamado.assunto}}</p>
+        <p><b>Setor:</b> {{chamado.setor}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

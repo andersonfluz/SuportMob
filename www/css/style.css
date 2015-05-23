@@ -1,0 +1,42 @@
+/* Empty. Add your own CSS if you like */
+.button.button-jesuita {
+    border-color: #0a9ec7;
+    background-color: #B7181D;
+    color: #fff; }
+    .button.button-jesuita:hover {
+      color: #fff;
+      text-decoration: none; }
+    .button.button-jesuita.active, .button.button-jesuita.activated {
+      border-color: #B75A5D;
+      background-color: #B75A5D;
+      box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1); }
+    .button.button-jesuita.button-clear {
+      border-color: transparent;
+      background: none;
+      box-shadow: none;
+      color: #11c1f3; }
+    .button.button-jesuita.button-icon {
+      border-color: transparent;
+      background: none; }
+    .button.button-jesuita.button-outline {
+      border-color: #11c1f3;
+      background: transparent;
+      color: #11c1f3; }
+      .button.button-jesuita.button-outline.active, .button.button-jesuita.button-outline.activated {
+        background-color: #11c1f3;
+        box-shadow: none;
+        color: #fff; }
+.bar.bar-jesuita {
+	border-color: #0c63ee;
+	background-color: #B7181D;
+	background-image: linear-gradient(0deg, #0c63ee, #0c63ee 50%, transparent 50%);
+	color: #fff; }
+	.bar.bar-positive .title {
+  	color: #fff; }
+	.bar.bar-positive.bar-footer {
+  	background-image: linear-gradient(180deg, #0c63ee, #0c63ee 50%, transparent 50%); }
+
+ion-tabs.tabs-color-active-jesuita .tab-item {
+  color: #444; }
+  ion-tabs.tabs-color-active-jesuita .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+    color: #B7181D; }
